@@ -21,7 +21,7 @@ class ActivityProvidersController {
     }
     async user_url({ request }) {
         const url = request.protocol() + "://" + request.host() + "/atividade/" + request.params().activityID;
-        return { "url": url, "method": "post" };
+        return { "url": url };
     }
     async deploy({ request }) {
         return request.body();

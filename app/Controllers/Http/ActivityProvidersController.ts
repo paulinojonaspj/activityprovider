@@ -26,7 +26,7 @@ export default class ActivityProvidersController {
   //deploy-atividade-get
   public async user_url({ request }: HttpContextContract) {
     const url = request.protocol() + "://" + request.host() + "/atividade/" + request.params().activityID;
-    return { "url": url,"method":"post"};
+    return { "url": url};
     //Retorna a url
   }
 

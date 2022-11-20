@@ -22,7 +22,7 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
   return {  
-    "name": "Exames acesso de Concurso Público Nacional",
+    "name": "AP - Exames acesso de Concurso Público Nacional",
     "autor": "Paulino Jonas - Nº utad80176",  
     "config_url": "https://acti.okutanga.pt/configuracao-atividade.html",  
     "json_params_url": "https://acti.okutanga.pt/json-params-atividade",  

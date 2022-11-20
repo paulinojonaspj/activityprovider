@@ -34,6 +34,6 @@ Route.get('/', async () => {
 
 Route.get('/json-params-atividade', "ActivityProvidersController.json_params_url");
 Route.get('/lista-analytics-atividade', "ActivityProvidersController.analytics_list_url");
-Route.get('/analytics-atividade/:activityID', "ActivityProvidersController.analytics_url");
+Route.post('/analytics-atividade/:activityID', "ActivityProvidersController.analytics_url");
 Route.get('/deploy-atividade/:activityID', "ActivityProvidersController.user_url");
 Route.post('/atividade/:activityID', "ActivityProvidersController.deploy");

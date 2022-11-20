@@ -21,15 +21,15 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
-  return {  
+  return {
     "name": "AP - Exames acesso de Concurso Público Nacional",
-    "autor": "Paulino Jonas - Nº utad80176",  
-    "config_url": "https://acti.okutanga.pt/configuracao-atividade.html",  
-    "json_params_url": "https://acti.okutanga.pt/json-params-atividade",  
-    "user_url": "https://acti.okutanga.pt/deploy-atividade/:activityID",  
-    "analytics_url": "https://acti.okutanga.pt/analytics-atividade/:activityID",  
-    "analytics_list_url": "https://acti.okutanga.pt/lista-analytics-atividade"  
-    } 
+    "autor": "Paulino Jonas - Nº utad80176",
+    "config_url": "https://ap.okutanga.pt/",
+    "json_params_url": "https://acti.okutanga.pt/json-params-atividade",
+    "user_url": "https://acti.okutanga.pt/deploy-atividade/:activityID",
+    "analytics_url": "https://acti.okutanga.pt/analytics-atividade/:activityID",
+    "analytics_list_url": "https://acti.okutanga.pt/lista-analytics-atividade"
+  }
 })
 
 Route.get('/json-params-atividade', "ActivityProvidersController.json_params_url");
